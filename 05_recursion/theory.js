@@ -86,4 +86,3 @@ function logic(min, max){
     // recursive call
     printNum(min, max);
 }
-

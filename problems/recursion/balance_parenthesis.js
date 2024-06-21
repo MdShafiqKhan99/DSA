@@ -42,9 +42,9 @@ function balancePar(array){
   return stack.length === 0;
 }
 
-const array = ["(","(",")",")","(",")"]
+const array = ["(","]"]
 const array2 = ["(", ")", "(", ")"]
-// console.log(balancePar(array))
+console.log(balancePar(array))
 // console.log(balancePar(array2))
 
 
@@ -68,8 +68,8 @@ function recursiveBalancePar(array, index = 0, count = 0){
 
 }
 
-console.log(recursiveBalancePar(array))
-console.log(recursiveBalancePar(array2))
+// console.log(recursiveBalancePar(array))
+// console.log(recursiveBalancePar(array2))
 
 /*
 
