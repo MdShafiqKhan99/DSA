@@ -30,7 +30,7 @@ function islandCount(grid){
       r >= rows ||
       c < 0 ||
       c >= cols ||
-      grid[r][c] === "W" ||
+      grid[r][c] === 0 ||
       visited.has(position)
     ){
       return false;
@@ -46,7 +46,7 @@ function islandCount(grid){
 
   for (let r = 0; r < rows; r++) {
     for (let c = 0; c < cols; c++) {
-      if(grid[r][c] === "L" && !visited.has(r + ',' + c)){
+      if(grid[r][c] === 1 && !visited.has(r + ',' + c)){
         dfs(r,c);
         count++;
       }
